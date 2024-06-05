@@ -80,7 +80,7 @@ main
 {
     margin: 6px;
     width: 85%;
-    background-color: #0C467B;
+    background-image: url("../images/Clouds_Art.png");
     border: 4px, solid, #d9d9d9;
 
     display: flex;
@@ -91,6 +91,8 @@ main
 {
     position: absolute;
     min-width: none;
+
+    z-index: 1;
 }
 .window-img
 {
@@ -110,7 +112,54 @@ main
     margin-left: 30%;
 }
 
+#icons
+{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    z-index: 0;
+    
+    display: flex;
+    justify-self: flex-start;
+    align-items: flex-start;
+}
+#cd-icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    flex-direction: column;
+}
+.icon-text { font-size: 10px; }
+.icon-img { width: 90px; }
+
+
+article
+{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#quote-box
+{
+    width: 75%;
+    height: 60%;
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    line-height: 50px;
+}
 
 footer 
 {
