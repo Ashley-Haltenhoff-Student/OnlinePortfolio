@@ -33,7 +33,7 @@ header
 {
     display: flex;
     width: 100%;
-    height: 1000px;
+    height: 700px;
 }
 
 
@@ -79,8 +79,11 @@ nav
 main
 {
     margin: 6px;
-    width: 85%;
+    min-width: 80%;
+    max-width: 1821px;
+    max-height: 1155px;
     background-image: url("../images/Clouds_Art.png");
+    background-repeat: no-repeat;
     border: 4px, solid, #d9d9d9;
 
     display: flex;
@@ -96,7 +99,7 @@ main
 }
 .window-img
 {
-    width: 100%;
+    width: 60%;
 }
 #window1 
 {
@@ -131,14 +134,14 @@ main
 
     flex-direction: column;
 }
-.icon-text { font-size: 10px; }
-.icon-img { width: 90px; }
+.icon-text { font-size: 8.5px; }
+.icon-img { width: 80px; }
 
 
 article
 {
     width: 100%;
-    height: 1000px;
+    height: 700px;
     background-color: white;
 
     display: flex;
@@ -159,6 +162,8 @@ article
 
     text-align: center;
     line-height: 50px;
+
+    font-size: 15px;
 }
 
 footer 
