@@ -1,0 +1,98 @@
+* 
+{
+    font-family: 'Press Start 2P', system-ui;
+    margin: 0;
+}
+
+
+
+main 
+{
+    background-color: #d5d2cd;
+    width: 100%;
+    height: 1000px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-window
+{
+    border: 4px, solid, white;
+    width: 100%;
+    height: 98%;
+    padding: 6px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header 
+{
+    width: 100%;
+    height: 80px;
+
+    background-image: linear-gradient(to right, #080a89, #a4caf6);
+
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: end;
+}
+.header-icon
+{
+    width: 70px;
+    margin: 5px;
+    image-rendering: pixelated;
+}
+.header-icon:hover 
+{
+    filter: brightness(0.75);
+}
+#icon-x { margin-right: 15px; }
+
+#nav-head
+{
+    margin: 15px;
+    font-size: 16px;
+}
+
+#certs-section
+{
+    margin-top: 10%;
+    width: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+    flex-direction: column;
+
+    line-height: 200%;
+    text-align: center;
+}
+
+
+#cert-imgs
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cert-img1
+{
+    width: 100px;
+    height: 100px;
+}
+#cert-img2
+{
+    width: 150px;
+    height: 150px;
+}
+#cert-img3
+{
+    width: 100px;
+    height: 100px;
+}
