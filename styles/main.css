@@ -61,7 +61,7 @@ nav
     width: 90%;
     height: 50px;
     margin: 10px;
-    font-size: 12px;
+    font-size: 0.6em;
 
     display: flex;
     align-items: center;
@@ -188,7 +188,7 @@ main
 
     display: flex;
     flex-wrap: wrap;
-    overflow-y: hidden;
+    overflow: scroll;
 }
 .pics { margin: 1%; height: 50%; }
 
