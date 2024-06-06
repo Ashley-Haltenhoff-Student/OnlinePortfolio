@@ -17,7 +17,6 @@ main
     justify-content: center;
     align-items: center;
 }
-
 #main-window
 {
     border: 4px, solid, white;
@@ -29,6 +28,7 @@ main
     flex-direction: column;
 }
 
+/* styling for header gradient and buttons */
 header 
 {
     width: 100%;
@@ -53,12 +53,14 @@ header
 }
 #icon-x { margin-right: 15px; }
 
+/* styling for navigation that takes you back to home page */
 #nav-head
 {
     margin: 15px;
     font-size: 16px;
 }
 
+/* styling for the section that holds the games */
 #game-section
 {
     margin-top: 10%;
@@ -74,7 +76,6 @@ header
     line-height: 200%;
     text-align: center;
 }
-
 #game-flex
 {
     display: flex;
