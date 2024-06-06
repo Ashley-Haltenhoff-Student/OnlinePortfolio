@@ -1,3 +1,4 @@
+/* creating a normality within the page */
 * 
 {
     font-family: 'Press Start 2P', system-ui;
@@ -5,7 +6,7 @@
 }
 
 
-
+/* styling section that holds everything */
 main 
 {
     background-color: #d5d2cd;
@@ -16,7 +17,6 @@ main
     justify-content: center;
     align-items: center;
 }
-
 #main-window
 {
     border: 4px, solid, white;
