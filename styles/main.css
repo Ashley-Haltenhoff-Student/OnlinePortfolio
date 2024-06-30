@@ -54,6 +54,8 @@ nav
     display: flex;
     flex-direction: column;
 
+    align-items: end;
+
     padding: 20px;
 }
 .navButton 
@@ -62,7 +64,7 @@ nav
     border: #b3b3b3, solid, 2px;
     object-fit: contain;
     
-    width: 90%;
+    width: 16em;
     height: 50px;
     margin: 10px;
     font-size: 0.6em;
@@ -70,12 +72,19 @@ nav
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+}
+.navButton:visited {
+    color: black;
 }
 .navButton:hover 
 {
     background-color: #b3b3b3;
     border-color: #d5d2cd;
     color: white;
+
+    width: 100%;
 
     transition: 100ms;
 }
@@ -251,29 +260,34 @@ footer
 }
 
 
-
+/* For tablets and other medium sized devices */
 @media screen and (max-width: 1023px) 
 {
+
     #home-flex {
         flex-direction: column;
     }
-
     #nav-container {
         flex-direction: row;
         min-width: 90%;
         align-self: center;
         justify-content: center;
-    }
 
+        align-items: center;
+    }
+    .navButton {
+        width: 16em;
+    }
+    .navButton:hover {
+        width: 20em;
+    }
     nav {
         height: 75px;
         width: 100%;
     }
-
     main {
         height: 700px;
     }
-
     .window-img {
         width: 80%;
     }
@@ -287,25 +301,50 @@ footer
             width: 95%;
         }
     }
-
     #twin-gray-boxes {
         flex-direction: column;
         height: 1000px;
     }
-
     #gray-boxes {
         height: 1500px;
     }
-
     #link-box, #pic-box {
         width: 90%;
     }
-
     #quote-box {
         width: 75%;
 
         padding: 50px;
         margin: 50px;
         margin-top: 0; 
+
+        font-size: 8px;
+    }
+}
+
+
+/* For phones and other small devices */
+@media screen and (max-width: 700px) {
+    
+    header {
+        font-size: 20px;
+    }
+    #nav-container {
+        width: 100%
+    }
+    .navButton {
+        width: 12em;
+    }
+    #window1 {
+        margin-left: 10%;
+    }
+    #link-box, #pic-box {
+        width: 80%;
+    }
+    #quote-box {
+        width: 60%;
+
+        line-height: 25px;
+        font-size: 6px;
     }
 }
