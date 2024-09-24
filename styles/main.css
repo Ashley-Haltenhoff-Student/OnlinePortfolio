@@ -1,101 +1,102 @@
+/* #region GENERAL */
 /* creating a normality within the page */
 * 
 {
-    font-family: 'Press Start 2P', system-ui;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     margin: 0;
 }
 body 
 { 
     background-color: black; 
     width: 100%;
-}
 
+    display: flex;
+    
+}
+a:visited, a:link, a:active {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h2, h3 {
+    font-weight: normal;
+}
+#all-content {
+    
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+/* #endregion GENERAL */
+
+/* #region FIRST-SECTION */
 /* creates a gray background for the first section of the home page */
 #home-container 
 {
     width: 100%;
-    background-color: #A6A6A6;
+    background-color: white;
 }
-
-
-/* styling for the gradient header with title */
-header 
-{
-    width: 100%;
-    height: 80px;
-
-    background-image: linear-gradient(to right, #080a89, #a4caf6);
-    font-size: 25px;
-    color: white;
-    text-shadow: -2.5px 2.5px #d9d9d9;
-}
-#header-text
-{
-    padding: 20px;
-}
-
 /* the flex container that holds the actual content */
 #home-flex 
 {
     display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
     width: 100%;
-    height: 700px;
+    height: 900px;
 }
-
-/* navigation */
+/* #region NAVIGATION */
 nav 
 {
     width: 15%;
-    max-width: 250px;
-    height: 100%;
+    max-width: 175px;
+    height: 100px;
 }
 #nav-container 
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-    align-items: end;
+    min-width: 90%;
+    align-self: center;
 
-    padding: 20px;
+    align-items: center;
+    padding: 12px;
 }
 .navButton 
 {   
-    background-color: #d5d2cd;
-    border: #b3b3b3, solid, 2px;
-    object-fit: contain;
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 0.4em;
     
-    width: 16em;
+    width: 90%;
     height: 50px;
-    margin: 10px;
-    font-size: 0.6em;
+    margin: 12px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-}
-.navButton:visited {
-    color: black;
 }
 .navButton:hover 
 {
-    background-color: #b3b3b3;
-    border-color: #d5d2cd;
-    color: white;
-
-    width: 100%;
-
-    transition: 100ms;
+    background-color: #e2e2e2;
+    transition: 200ms;
 }
+/* #endregion Navigation */
 
-/* styling for the main fake desktop section */
+/* #region FAKE-DESKTOP */
 main
 {
     margin: 6px;
-    min-width: 80%;
     max-width: 1821px;
     max-height: 1155px;
+    height: 700px;
+    
     background-image: url("../images/Clouds_Art.png");
     background-repeat: no-repeat;
     border: 4px, solid, #d9d9d9;
@@ -119,14 +120,9 @@ main
 #window1 
 {
     margin-right: 10%;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
 
     z-index: 1;
-}
-#window1:hover {
-    .window-img {
-        width: 110%;
-    }
 }
 
 #window2
@@ -159,13 +155,34 @@ main
 }
 .icon-text { font-size: 8.5px; }
 .icon-img { width: 80px; }
+/* #endregion FAKE-DESKTOP */
+/* #endregion FIRST-SECTION */
 
+/* #region HEADER */
+header 
+{
+    width: 100%;
+    height: 80px;
+    
 
+    background-image: linear-gradient(to right, #080a89, #a4caf6);
+    font-size: 25px;
+    color: white;
+    text-shadow: -2.5px 2.5px #d9d9d9;
+}
+#header-text
+{
+    padding: 20px;
+    font-family: 'Press Start 2P', system-ui;
+}
+/* #endregion HEADER */
+
+/* #region MID-SECTION */
 /* styling for the gray boxes section as a whole */
 #gray-boxes
 {
     width: 100%;
-    height: 1300px;
+    height: 1000px;
     background-color: white;
 
     display: flex;
@@ -177,17 +194,17 @@ main
 /* styling for what all boxes have in common */
 .gray-box
 {
-    background-color: lightgray;
+    background-color: white;
     border-radius: 15px;
-    padding: 50px;
-    
+    padding: 25px;
+    border: lightgray, 1px, solid;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    line-height: 50px;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 /* styling for the favorites, links, and pictures */
@@ -216,22 +233,24 @@ main
 {
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    height: 500px;
-    width: 85%;
+    height: 300px;
+    width: 75%;
     margin: 50px;
 }
 
 /* styling for the third gray box; quote */
 #quote-box 
 { 
-    width: 85%;
+    width: 75%;
     height: 20%;
-    background-color: lightgray;
+    background-color: white;
     border-radius: 15px;
-    padding: 50px;
-    margin: 50px;
-    margin-top: 30px; 
+    border: lightgray, 1px, solid;
+
+    padding: 15px;
+    margin-top: 50px; 
 
     display: flex;
     align-items: center;
@@ -241,9 +260,9 @@ main
     line-height: 50px;
     font-size: 10px;
 }
+/* #endregion MID-SECTION */
 
-
-/* styling for the footer which holds my phone number */
+/* #region FOOTER */
 footer 
 {
     color: white;
@@ -258,48 +277,20 @@ footer
     padding: 50px;
     padding-top: 300px;
 }
+/* #endregion FOOTER */
 
-
+/* #region RELATIVITY */
 /* For tablets and other medium sized devices */
 @media screen and (max-width: 1023px) 
 {
-
     #home-flex {
         flex-direction: column;
     }
-    #nav-container {
-        flex-direction: row;
-        min-width: 90%;
-        align-self: center;
-        justify-content: center;
-
-        align-items: center;
-    }
-    .navButton {
-        width: 16em;
-    }
-    .navButton:hover {
-        width: 20em;
-    }
     nav {
-        height: 75px;
-        width: 100%;
-    }
-    main {
-        height: 700px;
+        height: 50px;
     }
     .window-img {
-        width: 80%;
-    }
-    #window1 
-    {
-        margin-right: 0;
-        margin-bottom: 8%;
-    }
-    #window1:hover {
-        .window-img {
-            width: 95%;
-        }
+        visibility: hidden;
     }
     #twin-gray-boxes {
         flex-direction: column;
@@ -329,15 +320,6 @@ footer
     header {
         font-size: 20px;
     }
-    #nav-container {
-        width: 100%
-    }
-    .navButton {
-        width: 12em;
-    }
-    #window1 {
-        margin-left: 10%;
-    }
     #link-box, #pic-box {
         width: 80%;
     }
@@ -348,3 +330,4 @@ footer
         font-size: 6px;
     }
 }
+/* #endregion RELATIVITY */
