@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/games.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* imports font */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        /* imports font */
     </style>
-    <title>~> my games</title>
+    <title>Games - ayejae.com</title>
 </head>
+
 <body>
     <main>
-        <div id="main-window"> <!-- holds all the elements and allows borders -->
+        <div id="main-window"> <!-- holds all the elements -->
             <header> <!-- gradient header -->
                 <img class="header-icon" id="icon-minus" src="../images/minusButton.png" alt="a minus button">
                 <img class="header-icon" id="icon-x" src="../images/xButton.png" alt="a close button">
             </header>
-            <h3 id="nav-head"><a href="../index.html">GO BACK HOME</a></h3>
+            <h3 id="nav-head"><a href="../index.html">Go Back Home</a></h3>
             <div id="content-window">
 
                 <section id="game-section"> <!-- holds the title and the games -->
-                    <h3>GAMES</h3>
-                    <h3>______________</h3>
+                    <h2>My Games :</h2>
+                    <br>
+                    <hr>
 
-                    <br><br><br>
-                    <div id="game-flex">
-                        <p><a target="_blank" href="./games/harmony-plaza/harmony-plaza.html">~> HARMONY PLAZA <~</a></p> <!-- links to unity html file -->
+                    <br><br>
+                    <div id="games-flex">
+                        <div class="game">
+                            <a target="_blank" href="./games/harmony-plaza/harmony-plaza.html">
+                                <img class="game-img" src="../images/Clouds_Art.png" alt="">
+                                <p class="game-title">Harmony Plaza</p>
+                            </a> <!-- links to unity html file -->
+                        </div>
                     </div>
                 </section>
             </div>
         </div>
     </main>
 </body>
+
 </html>

@@ -11,35 +11,40 @@ a:visited, a:link, a:active {
 a:hover {
     text-decoration: underline;
 }
-
+h2, h3 {
+    font-weight: normal;
+}
+#main-window
+{
+    width: 100%;
+    height: 100%;
+}
 
 /* styling section that holds everything */
 main 
 {
     background-color: #d5d2cd;
     width: 100%;
-    height: 1000px;
+    height: 1500px;
     
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#main-window
-{
-    border: 4px, solid, white;
+#content-window {
+    height: 100%;
     width: 100%;
-    height: 98%;
-    padding: 6px;
-
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: white;
 }
 
-/* styling for header gradient and buttons */
+/* #region HEADER */
 header 
 {
     width: 100%;
-    height: 80px;
+    height: 5%;
 
     background-image: linear-gradient(to right, #080a89, #a4caf6);
 
@@ -59,12 +64,14 @@ header
     filter: brightness(0.75);
 }
 #icon-x { margin-right: 15px; }
+/* #endregion HEADER */
 
 /* styling for navigation that takes you back to home page */
 #nav-head
 {
-    margin: 15px;
+    padding: 15px;
     font-size: 16px;
+    height: 20px;
 }
 
 /* styling for the project links */
