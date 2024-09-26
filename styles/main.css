@@ -137,6 +137,7 @@ main
 .window-img
 {
     width: 100%;
+    image-rendering: pixelated;
 }
 #window1 
 {
@@ -180,24 +181,24 @@ main
 /* #endregion FIRST-SECTION */
 
 /* #region MID-SECTION */
-/* styling for the gray boxes section as a whole */
+/* styling for the boxes section as a whole */
 #gray-boxes
 {
     width: 100%;
-    height: 1000px;
+    height: 900px;
     background-color: white;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 /* styling for what all boxes have in common */
 .gray-box
 {
     background-color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 25px;
     border: lightgray, 1px, solid;
 
@@ -209,58 +210,65 @@ main
     font-weight: normal;
 }
 
-/* styling for the favorites, links, and pictures */
+/* styling for the favorites, links, and quote */
 #link-box 
-{ 
-    height: 100%;
+{
     width: 100%;
-    margin: 40px;
+    margin-bottom: 40px;
 
     align-items: start;
     flex-direction: column;
 }
-#pic-box
-{
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-    flex-wrap: wrap;
-    overflow: scroll;
-}
-.pics { margin: 1%; height: 50%; }
-
-/* styling for the first two gray boxes */
-#twin-gray-boxes
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 300px;
-    width: 75%;
-    margin: 50px;
-}
-
-/* styling for the third gray box; quote */
 #quote-box 
 { 
-    width: 75%;
-    height: 20%;
-    background-color: white;
-    border-radius: 15px;
-    border: lightgray, 1px, solid;
-
-    padding: 15px;
-    margin-top: 50px; 
+    height: 100%;
+    width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     text-align: center;    
-    line-height: 50px;
+    line-height: 35px;
     font-size: 10px;
+}
+/* styling for the first two gray boxes */
+#twin-gray-boxes
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    flex: 50%;
+
+    height: 600px;
+    margin-right: 50px;
+    padding: 25px;
+}
+
+/* styling for the third box */
+#pic-box
+{
+    height: 75%;
+    height: 600px;
+
+    flex: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    overflow-y: scroll ;
+}
+#pic-box::-webkit-scrollbar { display: none; }
+.pic-column {
+    width: 100%;
+    flex: 45%;
+    margin: 5px;
+}
+.pics { 
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 8px;
 }
 /* #endregion MID-SECTION */
 
@@ -272,12 +280,14 @@ footer
     width: 100%;
     height: 400px;
     background-color: black;
+    display: flex;
+    align-items: end;
+    justify-content: left;
 }
 .footer-text 
 {
     font-family: 'Times New Roman', Times, serif;
-    padding: 50px;
-    padding-top: 300px;
+    padding: 30px;
 }
 /* #endregion FOOTER */
 
@@ -323,14 +333,20 @@ footer
     }
     #gray-boxes {
         height: fit-content;
+        flex-direction: column;
     }
     #quote-box {
         height: 75px;
         line-height: normal;
 
         padding: 50px;
-        margin: 40px;
         margin-top: 0; 
+    }
+    #pic-box {
+        margin-bottom: 50px;
+    }
+    main {
+        display: none;
     }
 }
 
@@ -347,5 +363,6 @@ footer
         margin-right: 5%;
         margin-left: 5%;
     }
+    
 }
 /* #endregion RELATIVITY */

@@ -34,7 +34,7 @@
                 </nav>
 
                 <main> <!-- faux desktop -->
-                    <section class="window" id="window1">
+                    <section draggable="true" class="window" id="window1">
                         <img class="window-img" src="./images/welcome-window.png"
                             alt="image of a computer window that reads welcome">
                         <div id="window-main-1"></div>
@@ -45,7 +45,7 @@
 
                     <section id="icons"> <!-- icons on desktop -->
                         <div id="cd-icon">
-                            <img class="icon-img" src="./images/cd-icon.png" alt="cd icon">
+                            <img draggable="false" class="icon-img" src="./images/cd-icon.png" alt="cd icon">
                             <p class="icon-text">mix_tp.mp3</p>
                         </div>
                     </section>
@@ -53,10 +53,8 @@
 
             </div>
 
-
-
             <div id="gray-boxes">
-                <!-- holds the gray flexboxes that are before the footer and under the main section -->
+                <!-- holds the flexboxes that are before the footer and under the main section -->
 
                 <div id="twin-gray-boxes"> <!-- holds favorites, links, and pictures -->
                     <section id="link-box" class="gray-box">
@@ -72,23 +70,28 @@
                         <br>
                         <h3></h3>
                     </section>
-                    <section id="pic-box" class="gray-box"> <!-- gallery flexbox -->
-                        <img class="pics" src="./images/my-pics/me1-portfolio.jpg" alt="girl holding a certificate">
+                    <div id="quote-box" class="gray-box"> <!-- quote before the footer -->
+                        <h2>"A lot of the things I consider my accomplishments aren't my credentials or degrees;
+                            they're those little moments when I felt really insecure and I made it through."
+                            <br> -Amie Tornincasa (technical program manager for Netflix)
+                        </h2>
+                    </div>
+
+                </div>
+
+                <section id="pic-box" class="gray-box"> <!-- gallery flexbox -->
+                    <div class="pic-column">
                         <img class="pics" src="./images/my-pics/michigan-portfolio.jpg" alt="sign of Michigan">
                         <img class="pics" src="./images/my-pics/miffyMug-portfolio.jpg"
-                            alt="an espresso mug with a bunny on it">
+                        alt="an espresso mug with a bunny on it">
+                        <img class="pics" src="./images/my-pics/me1-portfolio.jpg" alt="girl holding a certificate">
+                    </div>
+                    <div class="pic-column">
                         <img class="pics" src="./images/my-pics/street-portfolio.jpg" alt="a street">
                         <img class="pics" src="./images/my-pics/me2-portfolio.jpg" alt="a girl posing with a dress on">
                         <img class="pics" src="./images/my-pics/walking-portfolio.jpg" alt="looking down while walking">
-                    </section>
-
-                </div>
-                <div id="quote-box"> <!-- quote before the footer -->
-                    <h2>"A lot of the things I consider my accomplishments aren't my credentials or degrees;
-                        they're those little moments when I felt really insecure and I made it through."
-                        <br> -Amie Tornincasa (technical program manager for Netflix)
-                    </h2>
-                </div>
+                    </div>
+                </section>
             </div>
         </div>
 
@@ -97,6 +100,7 @@
                 asha303@student.oaisd.org</h2>
         </footer>
 
+        <script src="./scripts/main.js"></script>
 </body>
 
 </html>
