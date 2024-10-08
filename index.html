@@ -13,94 +13,102 @@
 </head>
 
 <body>
+    <main> <!-- splits home-container and footer -->
+        <div id="home-container"> <!-- splits sidebar and all-content -->
+            <div id="all-content"> <!-- everything that is not the sidebar or footer -->
+                <header>
+                    <p id="header-text"> *⊹•~ AYEJAE.COM</p>
+                    <p id="sidebar-btn" onclick="openSidebar()">☰</p>
+                </header>
+                <div id="main-content">
+                    <div id="desktop-flex"> <!-- holds entire desktop section -->
+                        <div id="desktop"> <!-- faux desktop and all it's things -->
+                            <section draggable="true" class="window" id="window1">
+                                <img class="window-img" src="./images/welcome-window.png"
+                                    alt="image of a computer window that reads welcome">
+                                <div id="window-main-1"></div>
+                            </section>
+                            <section class="window" id="window2">
+                                <img class="window-img" src="./images/window.png" alt="image of a computer window">
+                            </section>
 
-    <div id="home-container"> <!-- holds first section of home page -->
-        <header>
-            <p id="header-text"> *⊹•~ AYEJAE.COM</p>
-        </header>
-        <div id="all-content">
-            <div id="home-flex"> <!-- holds navigation and fake desktop -->
+                            <section id="icons"> <!-- icons on desktop -->
+                                <div id="cd-icon">
+                                    <img draggable="false" class="icon-img" src="./images/cd-icon.png" alt="cd icon">
+                                    <p class="icon-text">mix_tp.mp3</p>
+                                </div>
+                            </section>
+                        </div>
 
-                <nav id="nav-container"> <!-- brings user to different pages -->
+                    </div>
+
+                    <div id="gray-boxes">
+                        <!-- holds the flexboxes that are before the footer and under the main section -->
+
+                        <div id="twin-gray-boxes"> <!-- holds favorites, links, and pictures -->
+                            <section id="link-box" class="gray-box">
+                                <h2>My Favorite Things ᯓ★</h2>
+                                <h3>-blueberries</h3>
+                                <h3>-rainy days</h3>
+                                <h3>-video games</h3>
+
+                                <br><br>
+                                <h2>Links ᯓ★</h2>
+                                <h3>github : <a target="_blank" href="https://github.com/Ashley-Haltenhoff-Student">
+                                        https://github.com/Ashley-Haltenhoff-Student</a></h3>
+                                <br>
+                                <h3></h3>
+                            </section>
+                            <div id="quote-box" class="gray-box"> <!-- quote before the footer -->
+                                <h2>"A lot of the things I consider my accomplishments aren't my credentials or degrees;
+                                    they're those little moments when I felt really insecure and I made it through."
+                                    <br> -Amie Tornincasa (technical program manager for Netflix)
+                                </h2>
+                            </div>
+
+                        </div>
+
+                        <section id="pic-box" class="gray-box"> <!-- gallery flexbox -->
+                            <div class="pic-column">
+                                <img class="pics" src="./images/my-pics/michigan-portfolio.jpg" alt="sign of Michigan">
+                                <img class="pics" src="./images/my-pics/miffyMug-portfolio.jpg"
+                                    alt="an espresso mug with a bunny on it">
+                                <img class="pics" src="./images/my-pics/me1-portfolio.jpg"
+                                    alt="girl holding a certificate">
+                            </div>
+                            <div class="pic-column">
+                                <img class="pics" src="./images/my-pics/street-portfolio.jpg" alt="a street">
+                                <img class="pics" src="./images/my-pics/me2-portfolio.jpg"
+                                    alt="a girl posing with a dress on">
+                                <img class="pics" src="./images/my-pics/walking-portfolio.jpg"
+                                    alt="looking down while walking">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <aside id="sidebar-menu">
+                <a href="javascript:void(0)" id="sidebar-menu-close-btn" onclick="closeSidebar()"> × </a>
+                <section id="link-container">
                     <a href="./pages/games.html">
-                        <section class="navButton">My Games</section>
+                        <section class="sidebar-link">My Games</section>
                     </a>
                     <a href="./pages/projects.html">
-                        <section class="navButton">Projects etc.</section>
+                        <section class="sidebar-link">Projects etc.</section>
                     </a>
                     <a href="./pages/certifications.html">
-                        <section class="navButton">Certifcations</section>
+                        <section class="sidebar-link">Certifcations</section>
                     </a>
-                </nav>
-
-                <main> <!-- faux desktop -->
-                    <section draggable="true" class="window" id="window1">
-                        <img class="window-img" src="./images/welcome-window.png"
-                            alt="image of a computer window that reads welcome">
-                        <div id="window-main-1"></div>
-                    </section>
-                    <section class="window" id="window2">
-                        <img class="window-img" src="./images/window.png" alt="image of a computer window">
-                    </section>
-
-                    <section id="icons"> <!-- icons on desktop -->
-                        <div id="cd-icon">
-                            <img draggable="false" class="icon-img" src="./images/cd-icon.png" alt="cd icon">
-                            <p class="icon-text">mix_tp.mp3</p>
-                        </div>
-                    </section>
-                </main>
-
-            </div>
-
-            <div id="gray-boxes">
-                <!-- holds the flexboxes that are before the footer and under the main section -->
-
-                <div id="twin-gray-boxes"> <!-- holds favorites, links, and pictures -->
-                    <section id="link-box" class="gray-box">
-                        <h2>My Favorite Things ᯓ★</h2>
-                        <h3>-blueberries</h3>
-                        <h3>-rainy days</h3>
-                        <h3>-video games</h3>
-
-                        <br><br>
-                        <h2>Links ᯓ★</h2>
-                        <h3>github : <a target="_blank" href="https://github.com/Ashley-Haltenhoff-Student">
-                                https://github.com/Ashley-Haltenhoff-Student</a></h3>
-                        <br>
-                        <h3></h3>
-                    </section>
-                    <div id="quote-box" class="gray-box"> <!-- quote before the footer -->
-                        <h2>"A lot of the things I consider my accomplishments aren't my credentials or degrees;
-                            they're those little moments when I felt really insecure and I made it through."
-                            <br> -Amie Tornincasa (technical program manager for Netflix)
-                        </h2>
-                    </div>
-
-                </div>
-
-                <section id="pic-box" class="gray-box"> <!-- gallery flexbox -->
-                    <div class="pic-column">
-                        <img class="pics" src="./images/my-pics/michigan-portfolio.jpg" alt="sign of Michigan">
-                        <img class="pics" src="./images/my-pics/miffyMug-portfolio.jpg"
-                        alt="an espresso mug with a bunny on it">
-                        <img class="pics" src="./images/my-pics/me1-portfolio.jpg" alt="girl holding a certificate">
-                    </div>
-                    <div class="pic-column">
-                        <img class="pics" src="./images/my-pics/street-portfolio.jpg" alt="a street">
-                        <img class="pics" src="./images/my-pics/me2-portfolio.jpg" alt="a girl posing with a dress on">
-                        <img class="pics" src="./images/my-pics/walking-portfolio.jpg" alt="looking down while walking">
-                    </div>
                 </section>
-            </div>
+            </aside>
         </div>
 
         <footer> <!-- footer; contains emails -->
             <h2 class="footer-text">౨ৎ⋆˚｡⋆<br> CONTACT ME : <br><br> ashley.haltenhoff@gmail.com <br>
                 asha303@student.oaisd.org</h2>
         </footer>
-
-        <script src="./scripts/main.js"></script>
+    </main>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
