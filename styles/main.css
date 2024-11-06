@@ -48,6 +48,7 @@ h2, h3 {
     width: 0;
     font-size: 25px;
     border-radius: 10px;
+    border-top-right-radius: 0%;
 
     position: fixed;
     z-index: 1500;
@@ -136,6 +137,10 @@ header
     align-self: center;
     width: 100%;
     height: fit-content;
+}
+#game-question {
+    text-decoration: underline;
+    padding-left: 12px;
 }
 /* #region NAVIGATION */
 /* #endregion Navigation */
