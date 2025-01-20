@@ -1,0 +1,147 @@
+/* creating a normality within the page */
+* 
+{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    margin: 0;
+
+    line-height: 2;
+}
+a:visited, a:link, a:active {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h2, h3 {
+    font-weight: normal;
+}
+#main-window
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* styling section that holds everything */
+main 
+{
+    background-color: #d5d2cd;
+    width: 100%;
+    height: 900px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#white-window {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: white;
+}
+
+/* #region HEADER */
+header 
+{
+    width: 100%;
+    height: 70px;
+
+    background-image: linear-gradient(to right, #080a89, #a4caf6);
+
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: end;
+}
+.header-icon
+{
+    width: 70px;
+    margin: 5px;
+    image-rendering: pixelated;
+}
+.header-icon:hover 
+{
+    filter: brightness(0.75);
+}
+#icon-x { margin-right: 15px; }
+/* #endregion HEADER */
+
+/* styling for navigation that takes you back to home page */
+#nav-head
+{
+    padding: 15px;
+    font-size: 16px;
+    height: 20px;
+}
+
+/* styling for where the text content is */
+#content-window {
+    width: 80%;
+    margin-bottom: 5%;
+
+    display: flex;
+    flex-direction: row;
+}
+#content
+{
+    margin-top: 10%;
+    width: 70%;
+
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+
+    border-right: black solid 1px;
+
+}
+#side-content {
+    margin-top: 10%;
+    width: 30%;
+
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+.title-with-icon {
+    display: flex;
+    flex-direction: row;
+}
+.icon {
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+}
+li {
+    font-size: 14px;
+}
+
+/* For phones and other small devices */
+@media screen and (max-width: 850px) {
+    
+    #content-window {
+        flex-direction: column;
+        width: 100%;
+    }
+    #content {
+        border: none;
+        width: 90%;
+    }
+    #side-content {
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .side-content-section {
+        padding: 20px;
+    }
+    
+}
