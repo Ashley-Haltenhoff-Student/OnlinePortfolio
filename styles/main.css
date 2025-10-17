@@ -23,22 +23,20 @@ a:hover {
 h2, h3 {
     font-weight: normal;
 }
-#all-content {
+#header-and-content {
     background-color: white;
     transition: 400ms;
+    width: 100%;
 }
-#main-content {
-    
+#sidebar-splitter 
+{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top: 100px; /* make room for fixed header */
+    flex-wrap: wrap;
+}
 
-   background-color: white;
+main {
+    width: 100%;
 }
 /* #endregion GENERAL */
 
@@ -119,192 +117,67 @@ header
 }
 /* #endregion HEADER */
 
-/* #region FIRST-SECTION */
-/* creates a gray background for the first section of the home page */
-#home-container 
-{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-}
-/* the flex container that holds the actual content */
-#desktop-flex 
-{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: fit-content;
-}
-#game-question {
-    text-decoration: underline;
-    padding-left: 12px;
-}
-/* #region NAVIGATION */
-/* #endregion Navigation */
 
-/* #region FAKE-DESKTOP */
-#desktop
-{
-    margin: 6px;
-    max-width: 1813px;
-    max-height: 1155px;
-    height: 700px;
-    
-    background-image: url("../images/Clouds_Art.png");
-    background-repeat: no-repeat;
-    border: 4px, solid, #d9d9d9;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* styling for the fake desktop windows */
-.window 
-{
-    position: absolute;
-    min-width: none;
-    overflow: hidden;
-}
-.window-img
-{
-    width: 100%;
-    image-rendering: pixelated;
-}
-#window1 
-{
-    margin-right: 10%;
-    margin-bottom: 4%;
-
-    z-index: 1;
-}
-#window2
-{
-    margin-top: 3%;
-    margin-left: 5%;
-    z-index: 0;
-}
-
-/* styling for the fake applications on the desktop */
-#icons
-{
-    width: 100%;
-    height: 100%;
-    margin: 20px;
-    z-index: 0;
+/* #region MAIN */
+#main-content {
     
     display: flex;
-    justify-self: end;
-    justify-content: end;
-    align-items: flex-start;
-}
-#cd-icon
-{
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    flex-direction: column;
-}
-.icon-text { font-size: 8.5px; }
-.icon-img { width: 80px; }
-/* #endregion FAKE-DESKTOP */
-/* #endregion FIRST-SECTION */
-
-/* #region MID-SECTION */
-/* styling for the boxes section as a whole */
-#gray-boxes
-{
     width: 100%;
-    height: 900px;
+    height: 100em;
+
+    background-color: #e2e9f1;
+    /*background: url(/images/Clouds_Art.png) no-repeat center center fixed;*/
+    background-size: cover;
+}
+#main-white-section {
+    height: 80%;
+    width: 70%;
+    padding: 10px;
     background-color: white;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+
+    color: black;
+}
+/* #region introduction-section */
+#introduction-section {
+    height: 25%;
+    width: 100%;
+    border: black, 2px, solid;
+    
+    display: flex;
     flex-direction: row;
-}
-
-/* styling for what all boxes have in common */
-.gray-box
-{
-    background-color: white;
-    border-radius: 10px;
-    padding: 25px;
-    border: lightgray, 1px, solid;
-
-    display: flex;
-    align-items: center;
     justify-content: center;
-
-    font-size: 12px;
-    font-weight: normal;
-}
-
-/* styling for the favorites, links, and quote */
-#link-box 
-{
-    width: 100%;
-    margin-bottom: 40px;
-
-    align-items: start;
-    flex-direction: column;
-}
-#quote-box 
-{ 
-    height: 100%;
-    width: 100%;
-
-    display: flex;
     align-items: center;
-    justify-content: center;
-
-    text-align: center;    
-    line-height: 35px;
-    font-size: 10px;
 }
-/* styling for the first two gray boxes */
-#twin-gray-boxes
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#intro-pictures {
+    width:50%;
+    height: 25%;
 
-    flex: 50%;
+    border: rgb(255, 35, 35), 2px, solid;
+}
+#intro-words {
+    width:50%;
+    height: 50%;
 
-    height: 600px;
-    margin-right: 50px;
-    padding: 25px;
+    border: rgb(255, 35, 35), 2px, solid;
 }
 
-/* styling for the third box */
-#pic-box
-{
-    height: 75%;
-    height: 600px;
+/* #endregion introduction-section */
+/* #endregion MAIN */
 
-    flex: 25%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    overflow-y: scroll ;
-}
+
 #pic-box::-webkit-scrollbar { display: none; }
-.pic-column {
-    width: 100%;
-    flex: 45%;
-    margin: 5px;
-}
 .pics { 
     width: 100%;
     border-radius: 3px;
     margin-top: 8px;
 }
-/* #endregion MID-SECTION */
 
 /* #region FOOTER */
 footer 
@@ -340,33 +213,6 @@ footer
     }
     #header-text {
         font-size: 20px;
-    }
-    #desktop-flex {
-        flex-direction: column;
-        height: fit-content;
-    }
-    /* #endregion NAVIGATION */
-    .window-img {
-        visibility: hidden;
-    }
-    #twin-gray-boxes {
-        flex-direction: column;
-        height: 500px;
-        margin: 30px;
-    }
-    #gray-boxes {
-        height: fit-content;
-        flex-direction: column;
-    }
-    #quote-box {
-        height: 75px;
-        line-height: normal;
-
-        padding: 50px;
-        margin-top: 0; 
-    }
-    #pic-box {
-        margin-bottom: 50px;
     }
 }
 
