@@ -1,27 +1,10 @@
 /* #region GENERAL */
 /* creating a normality within the page */
-* 
-{
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    margin: 0;
-}
 body 
 { 
+    /*UNIVERSAL BODY SETTINGS IN BASE.CSS*/
     background-color: black; 
-    width: 100%;
-
     display: flex;
-    
-}
-a:visited, a:link, a:active {
-    color: black;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-h2, h3 {
-    font-weight: normal;
 }
 #header-and-content {
     background-color: white;
@@ -34,7 +17,6 @@ h2, h3 {
     display: flex;
     flex-wrap: wrap;
 }
-
 main {
     width: 100%;
 }
@@ -122,7 +104,7 @@ header
 #main-content {
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -130,7 +112,20 @@ header
 
     background-color: #e2e9f1;
     background-size: cover;
-    /*background: url(/images/Clouds_Art.png) no-repeat center center fixed;*/
+    /*background: url(/images/Clouds_Art.png) no-repeat center center fixed; KEEP*/
+}
+#main-section-nav {
+    height: 90%;
+    width: 10%;
+    padding: 1rem;
+    padding-top: 3rem;
+}
+#main-section-nav-content {
+    width: 10%;
+    
+    position: fixed;
+    text-align: right;
+    line-height: 2;
 }
 #main-white-section {
     height: 90%;
@@ -141,7 +136,7 @@ header
     flex-direction: column;
     align-items: center;
 
-    color: black;
+    font-size: 1rem;
 }
 
     /* #region introduction-section */
@@ -178,24 +173,24 @@ header
     }
     #intro-words-hello-world {
         position: relative;
-        left: -125px;
-        top: -20px;
+        left: -7rem;
+        top: -2rem;
 
-        font-size: 1.25em;
+        font-size: 1.25rem;
     }
     #intro-words-name {
-        font-size: 3.25em;
+        font-size: 3.25rem;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bolder;
     }
     #intro-words-titles {
         z-index: 10;
 
-        font-size: 1.25em;
+        font-size: 1.25rem;
 
         position: relative;
-        left: 250px;
-        top: 50px;
+        left: 16rem;
+        top: 3.5rem;
 
     }
     .title {
@@ -211,7 +206,7 @@ header
         height: 25vh;
         padding: 5%;
         line-height: 2;
-        font-size: 1.25em;
+        font-size: 1.25rem;
         
         display: flex;
         justify-content: center;
@@ -220,14 +215,6 @@ header
     /* #endregion description-section */
 
 /* #endregion MAIN */
-
-
-#pic-box::-webkit-scrollbar { display: none; }
-.pics { 
-    width: 100%;
-    border-radius: 3px;
-    margin-top: 8px;
-}
 
 /* #region FOOTER */
 footer 
@@ -249,36 +236,6 @@ footer
 }
 /* #endregion FOOTER */
 
-/* #region RELATIVITY */
-/* For tablets and other medium sized devices */
-@media screen and (max-width: 1023px) 
-{
-    a:visited, a:link, a:active {
-    color: black;
-    text-decoration: underline;
-    }
-    header {
-        height: 50px;
-        box-shadow: 2px 4px 2px #e4e4e4;
-    }
-    #header-text {
-        font-size: 20px;
-    }
-}
 
 
-/* For phones and other small devices */
-@media screen and (max-width: 700px) {
-    
-    #header-text {
-        font-size: 16px;
-        text-shadow: -2.5px 2px #d9d9d9;
-    }
-    #main-content {
-        width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-    
-}
-/* #endregion RELATIVITY */
+/* ::-webkit-scrollbar { display: none; } */

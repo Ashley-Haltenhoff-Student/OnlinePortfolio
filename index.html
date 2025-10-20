@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/main_relativity.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -22,7 +24,15 @@
                     <a id="sidebar-btn" onclick="openSidebar()" href="javascript:void(0)">☰</a>
                 </header>
                 <div id="main-content">
-                    <section id="main-white-section">
+                    <div id="main-section-nav">
+                        <div id="main-section-nav-content">
+                            <a href="#description-section">About Me</a><br>
+                            <a href="">Skills</a><br>
+                            <a href="">Certifications</a><br>
+                            <a href="">Photography</a><br>
+                        </div>
+                    </div>
+                    <div id="main-white-section">
                         <div id="introduction-section">
                             <div class="intro-sections" id="intro-words">
                                 <p id="intro-words-hello-world">Hello World, it's :</p>
@@ -50,8 +60,7 @@
                                 sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                                 est laborum.</p>
                         </div>
-                    </section>
-
+                    </div>
                 </div>
             </div>
             <aside id="sidebar-menu">
@@ -62,12 +71,6 @@
                     </a>
                     <a href="./pages/projects.html">
                         <section class="sidebar-link">Projects etc.</section>
-                    </a>
-                    <a href="./pages/certifications.html">
-                        <section class="sidebar-link">Certifcations</section>
-                    </a>
-                    <a href="./pages/about_me.html">
-                        <section class="sidebar-link">About Me</section>
                     </a>
                 </section>
             </aside>

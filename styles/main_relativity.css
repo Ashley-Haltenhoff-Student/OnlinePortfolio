@@ -1,0 +1,40 @@
+/* For tablets and other medium sized devices */
+@media screen and (max-width: 1023px) 
+{
+    header {
+        height: 3.5rem;
+        box-shadow: 2px 4px 2px #e4e4e4;
+    }
+    #header-text {
+        font-size: 1.25rem;
+    }
+
+    #intro-words-hello-world {
+        left: -25px;
+        font-size: 1.25rem;
+    }
+    #intro-words-name {
+        font-size: 2rem;
+    }
+
+    #main-white-section {
+        font-size: 0.5rem;
+    }
+}
+
+
+
+/* For phones and other small devices */
+@media screen and (max-width: 700px) {
+    
+    #header-text {
+        font-size: 16px;
+        text-shadow: -2.5px 2px #d9d9d9;
+    }
+    #main-content {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+}    
